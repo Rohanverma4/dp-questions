@@ -21,6 +21,7 @@ const similarText = (str1,str2) => {
         dp.push(curr_row)
     }
     return dp[dp.length-1][dp[0].length-1]
+    
 }
 
 console.log(similarText("AEDFHR","ABCDGH"))
