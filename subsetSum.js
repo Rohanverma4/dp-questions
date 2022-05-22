@@ -18,7 +18,7 @@ const subsetSum = (array,sum) => {
                 temp_row.push(dp[i-1][j])
             } else {
                 temp_row.push(dp[i-1][j-current_value] || dp[i-1][j])
-                if (temp_row.length - 1 ==sum){
+                if (temp_row.length - 1 ==sum && temp_row[temp_row.length-1]){
                     return true;
                 }
             }
